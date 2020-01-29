@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import FriendsList from "./FriendsList";
 import { createFragmentContainer, graphql } from "react-relay";
 
@@ -20,7 +19,7 @@ export default createFragmentContainer(Friends, {
   viewer: graphql`
       fragment Friends_viewer on User{
             id,
-            ....FriendsList_viewer,
+            ...FriendsList_viewer,
       }
-      `
+      `,
 });

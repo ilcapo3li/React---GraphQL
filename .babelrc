@@ -1,7 +1,8 @@
 {
-  "presets": ["react","env", "stage-0"],
+  "presets": ["react", "env", "stage-0"],
   "plugins": [
     "relay",
     "transform-runtime"
   ]
 }
+ 
